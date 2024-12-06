@@ -1,14 +1,15 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #f1f2f2;
   font-family: sans-serif;
+  color: #823d27;
 }
 
 body {
-  margin: 0 auto;
+  margin: 2 auto;
   width: 100%;
   max-width: 80ch;
   padding: 1rem;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
 
 h1 {
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 16px;
 }
 
 /* ナビゲーションのスタイル */
@@ -29,15 +30,15 @@ h1 {
 .hamburger .line {
   display: block;
   width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #823d27;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
+  left: 10px;
   background-color: #ff9776;
   display: none;
   margin: 0;
@@ -45,16 +46,16 @@ h1 {
 
 .nav-links a {
   display: block;
-  text-align: center;
-  padding: 10px 0;
+  text-align: left;
+  padding: 3px 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .nav-links a:hover, a:focus {
-  background-color: #ff9776;
+  background-color: #ba4a28;
 }
 
 .expanded {
@@ -79,3 +80,13 @@ h1 {
     display: none;
   }
 }
+
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
